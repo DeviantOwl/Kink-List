@@ -13,8 +13,8 @@ body {
 
 .table td, .table th {
     padding: 0.75rem;
-    border-top: none;
     text-align: center;
+    border-top: 1px solid #dee2e600;
 }
 
 h2 {
