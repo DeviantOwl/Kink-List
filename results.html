@@ -1,92 +1,142 @@
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="js/selections.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
+
+
+  <link rel="stylesheet" href="css/main_results.css">
   <script src="js/html2canvas.js"></script>
-  <link rel="stylesheet" href="css/main.css">
+  <script src="js/results.js"></script>
 </head>
 <html>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+  <div class=menubar>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="display: flex;flex-direction: row;">
+        <a class="navbar-brand" href="#">DB</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://kinktest.deviantbound.com">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://deviantbound.com">Join Our Community</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">BDSM Test</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Resources
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-<table style="color: #ffffff;">
+    </nav>
+</div>
+
+
+
+<div class="table-section"></div>
+<h2 style="font-size:medium;margin-left: 2rem;">Vanilla Kinks</h2>
+<table class="table table-striped table-dark">
   <thead>
     <tr>
-      <th>1</th>
-      <th>Partner</th>
-      <th>Self</th>
+      <th scope="col" style="font-weight: bold;">Kink</th>
+      <th scope="col" style="font-weight: bold;">S</th>
+      <th scope="col" style="font-weight: bold;">P</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Hugging</td>
-      <td><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%"
-          height="100%" viewBox="0 0 24 24">
-          <path
-            d="M12,17.5C14.33,17.5 16.3,16.04 17.11,14H6.89C7.69,16.04 9.67,17.5 12,17.5M8.5,11A1.5,1.5 0 0,0 10,9.5A1.5,1.5 0 0,0 8.5,8A1.5,1.5 0 0,0 7,9.5A1.5,1.5 0 0,0 8.5,11M15.5,11A1.5,1.5 0 0,0 17,9.5A1.5,1.5 0 0,0 15.5,8A1.5,1.5 0 0,0 14,9.5A1.5,1.5 0 0,0 15.5,11M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z">
-          </path>
-        </svg></td>
-      <td><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%"
-          height="100%" viewBox="0 0 24 24">
-          <path
-            d="M12,17.5C14.33,17.5 16.3,16.04 17.11,14H6.89C7.69,16.04 9.67,17.5 12,17.5M8.5,11A1.5,1.5 0 0,0 10,9.5A1.5,1.5 0 0,0 8.5,8A1.5,1.5 0 0,0 7,9.5A1.5,1.5 0 0,0 8.5,11M15.5,11A1.5,1.5 0 0,0 17,9.5A1.5,1.5 0 0,0 15.5,8A1.5,1.5 0 0,0 14,9.5A1.5,1.5 0 0,0 15.5,11M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z">
-          </path>
-        </svg></td>
+      <th scope="row">Cuddling</th>
+      <td>
+        <svg viewbox="0 0 25 25">
+          <path class="path-cuddling-s" fill-rule="evenodd" clip-rule="evenodd" fill="#A0A0A0"  d="M 9.6 2.1 c -4 0 -7.6 3.4 -7.6 7.5 c 0 4.2 3.4 7.6 7.6 7.6 c 4.2 0 7.6 -3.4 7.6 -7.6 C 17.3 5.5 13.8 2.1 9.6 2.1 z M 10 14.7 c -0.5 0 -1 -0.5 -1 -1 c 0 -0.5 0.5 -1 1 -1 c 0.5 0 1 0.5 1 1 C 10.9 14.2 10.5 14.7 10 14.7 z M 12.2 8.8 c -0.3 0.5 -0.5 0.8 -1 1.3 c -0.3 0.3 -0.5 0.7 -0.7 1.1 c -0.1 0.5 -0.5 0.7 -1 0.5 c -0.5 -0.1 -0.7 -0.5 -0.5 -1 c 0.1 -0.7 0.5 -1.3 0.8 -1.6 c 0.5 -0.5 0.7 -1 0.7 -1.6 c 0 -0.1 0 -0.5 -0.1 -0.5 c -0.1 -0.5 -0.7 -0.5 -1 -0.1 c -0.1 0.1 -0.1 0.3 -0.3 0.5 c -0.1 0.3 -0.5 0.5 -0.7 0.5 c -0.3 0 -0.5 0 -0.7 0 c -0.5 0 -0.5 -0.1 -0.5 -0.5 c 0.3 -1.3 1.1 -2.1 2.8 -2.1 c 0.5 0 1 0.1 1.4 0.7 C 12.5 6.6 12.7 7.9 12.2 8.8 z" />
+        </svg>
+      </td>
+      <td>
+        <svg viewbox="0 0 25 25">
+        <path class="path-cuddling-p" fill-rule="evenodd" clip-rule="evenodd" fill="#A0A0A0"  d="M 9.6 2.1 c -4 0 -7.6 3.4 -7.6 7.5 c 0 4.2 3.4 7.6 7.6 7.6 c 4.2 0 7.6 -3.4 7.6 -7.6 C 17.3 5.5 13.8 2.1 9.6 2.1 z M 10 14.7 c -0.5 0 -1 -0.5 -1 -1 c 0 -0.5 0.5 -1 1 -1 c 0.5 0 1 0.5 1 1 C 10.9 14.2 10.5 14.7 10 14.7 z M 12.2 8.8 c -0.3 0.5 -0.5 0.8 -1 1.3 c -0.3 0.3 -0.5 0.7 -0.7 1.1 c -0.1 0.5 -0.5 0.7 -1 0.5 c -0.5 -0.1 -0.7 -0.5 -0.5 -1 c 0.1 -0.7 0.5 -1.3 0.8 -1.6 c 0.5 -0.5 0.7 -1 0.7 -1.6 c 0 -0.1 0 -0.5 -0.1 -0.5 c -0.1 -0.5 -0.7 -0.5 -1 -0.1 c -0.1 0.1 -0.1 0.3 -0.3 0.5 c -0.1 0.3 -0.5 0.5 -0.7 0.5 c -0.3 0 -0.5 0 -0.7 0 c -0.5 0 -0.5 -0.1 -0.5 -0.5 c 0.3 -1.3 1.1 -2.1 2.8 -2.1 c 0.5 0 1 0.1 1.4 0.7 C 12.5 6.6 12.7 7.9 12.2 8.8 z" />
+      </svg>
+    </td>
     </tr>
     <tr>
-      <td>Kissing</td>
-      <td><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%"
-          height="100%" viewBox="0 0 24 24">
-          <path
-            d="M12,17.5C14.33,17.5 16.3,16.04 17.11,14H6.89C7.69,16.04 9.67,17.5 12,17.5M8.5,11A1.5,1.5 0 0,0 10,9.5A1.5,1.5 0 0,0 8.5,8A1.5,1.5 0 0,0 7,9.5A1.5,1.5 0 0,0 8.5,11M15.5,11A1.5,1.5 0 0,0 17,9.5A1.5,1.5 0 0,0 15.5,8A1.5,1.5 0 0,0 14,9.5A1.5,1.5 0 0,0 15.5,11M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z">
-          </path>
-        </svg></td>
-      <td><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%"
-          height="100%" viewBox="0 0 24 24">
-          <path
-            d="M12,17.5C14.33,17.5 16.3,16.04 17.11,14H6.89C7.69,16.04 9.67,17.5 12,17.5M8.5,11A1.5,1.5 0 0,0 10,9.5A1.5,1.5 0 0,0 8.5,8A1.5,1.5 0 0,0 7,9.5A1.5,1.5 0 0,0 8.5,11M15.5,11A1.5,1.5 0 0,0 17,9.5A1.5,1.5 0 0,0 15.5,8A1.5,1.5 0 0,0 14,9.5A1.5,1.5 0 0,0 15.5,11M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z">
-          </path>
-        </svg></td>
+      <th scope="row">Hugging</th>
+      <td>
+        <svg viewbox="0 0 25 25">
+        <path class="path-hugs-p" fill-rule="evenodd" clip-rule="evenodd" fill="#A0A0A0"  d="M 9.6 2.1 c -4 0 -7.6 3.4 -7.6 7.5 c 0 4.2 3.4 7.6 7.6 7.6 c 4.2 0 7.6 -3.4 7.6 -7.6 C 17.3 5.5 13.8 2.1 9.6 2.1 z M 10 14.7 c -0.5 0 -1 -0.5 -1 -1 c 0 -0.5 0.5 -1 1 -1 c 0.5 0 1 0.5 1 1 C 10.9 14.2 10.5 14.7 10 14.7 z M 12.2 8.8 c -0.3 0.5 -0.5 0.8 -1 1.3 c -0.3 0.3 -0.5 0.7 -0.7 1.1 c -0.1 0.5 -0.5 0.7 -1 0.5 c -0.5 -0.1 -0.7 -0.5 -0.5 -1 c 0.1 -0.7 0.5 -1.3 0.8 -1.6 c 0.5 -0.5 0.7 -1 0.7 -1.6 c 0 -0.1 0 -0.5 -0.1 -0.5 c -0.1 -0.5 -0.7 -0.5 -1 -0.1 c -0.1 0.1 -0.1 0.3 -0.3 0.5 c -0.1 0.3 -0.5 0.5 -0.7 0.5 c -0.3 0 -0.5 0 -0.7 0 c -0.5 0 -0.5 -0.1 -0.5 -0.5 c 0.3 -1.3 1.1 -2.1 2.8 -2.1 c 0.5 0 1 0.1 1.4 0.7 C 12.5 6.6 12.7 7.9 12.2 8.8 z" />
+      </svg>
+    </td>
+      <td>
+        <svg viewbox="0 0 25 25">
+          <path class="path-hugs-s" fill-rule="evenodd" clip-rule="evenodd" fill="#A0A0A0"  d="M 9.6 2.1 c -4 0 -7.6 3.4 -7.6 7.5 c 0 4.2 3.4 7.6 7.6 7.6 c 4.2 0 7.6 -3.4 7.6 -7.6 C 17.3 5.5 13.8 2.1 9.6 2.1 z M 10 14.7 c -0.5 0 -1 -0.5 -1 -1 c 0 -0.5 0.5 -1 1 -1 c 0.5 0 1 0.5 1 1 C 10.9 14.2 10.5 14.7 10 14.7 z M 12.2 8.8 c -0.3 0.5 -0.5 0.8 -1 1.3 c -0.3 0.3 -0.5 0.7 -0.7 1.1 c -0.1 0.5 -0.5 0.7 -1 0.5 c -0.5 -0.1 -0.7 -0.5 -0.5 -1 c 0.1 -0.7 0.5 -1.3 0.8 -1.6 c 0.5 -0.5 0.7 -1 0.7 -1.6 c 0 -0.1 0 -0.5 -0.1 -0.5 c -0.1 -0.5 -0.7 -0.5 -1 -0.1 c -0.1 0.1 -0.1 0.3 -0.3 0.5 c -0.1 0.3 -0.5 0.5 -0.7 0.5 c -0.3 0 -0.5 0 -0.7 0 c -0.5 0 -0.5 -0.1 -0.5 -0.5 c 0.3 -1.3 1.1 -2.1 2.8 -2.1 c 0.5 0 1 0.1 1.4 0.7 C 12.5 6.6 12.7 7.9 12.2 8.8 z" />
+        </svg>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>t</td>
+      <td>b</td>
     </tr>
   </tbody>
 </table>
+
+<div class="table-section"></div>
+<h2 style="font-size:medium;margin-left: 2rem;">Vanilla Kinks</h2>
+<table class="table table-striped table-dark">
+  <thead>
+    <tr>
+      <th scope="col" style="font-weight: bold;">Kink</th>
+      <th scope="col" style="font-weight: bold;">S</th>
+      <th scope="col" style="font-weight: bold;">P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Cuddling</th>
+      <td>
+        <svg viewbox="0 0 25 25">
+          <path class="path-cuddling-s" fill-rule="evenodd" clip-rule="evenodd" fill="#A0A0A0"  d="M 9.6 2.1 c -4 0 -7.6 3.4 -7.6 7.5 c 0 4.2 3.4 7.6 7.6 7.6 c 4.2 0 7.6 -3.4 7.6 -7.6 C 17.3 5.5 13.8 2.1 9.6 2.1 z M 10 14.7 c -0.5 0 -1 -0.5 -1 -1 c 0 -0.5 0.5 -1 1 -1 c 0.5 0 1 0.5 1 1 C 10.9 14.2 10.5 14.7 10 14.7 z M 12.2 8.8 c -0.3 0.5 -0.5 0.8 -1 1.3 c -0.3 0.3 -0.5 0.7 -0.7 1.1 c -0.1 0.5 -0.5 0.7 -1 0.5 c -0.5 -0.1 -0.7 -0.5 -0.5 -1 c 0.1 -0.7 0.5 -1.3 0.8 -1.6 c 0.5 -0.5 0.7 -1 0.7 -1.6 c 0 -0.1 0 -0.5 -0.1 -0.5 c -0.1 -0.5 -0.7 -0.5 -1 -0.1 c -0.1 0.1 -0.1 0.3 -0.3 0.5 c -0.1 0.3 -0.5 0.5 -0.7 0.5 c -0.3 0 -0.5 0 -0.7 0 c -0.5 0 -0.5 -0.1 -0.5 -0.5 c 0.3 -1.3 1.1 -2.1 2.8 -2.1 c 0.5 0 1 0.1 1.4 0.7 C 12.5 6.6 12.7 7.9 12.2 8.8 z" />
+        </svg>
+      </td>
+      <td>
+        <svg viewbox="0 0 25 25">
+        <path class="path-cuddling-p" fill-rule="evenodd" clip-rule="evenodd" fill="#A0A0A0"  d="M 9.6 2.1 c -4 0 -7.6 3.4 -7.6 7.5 c 0 4.2 3.4 7.6 7.6 7.6 c 4.2 0 7.6 -3.4 7.6 -7.6 C 17.3 5.5 13.8 2.1 9.6 2.1 z M 10 14.7 c -0.5 0 -1 -0.5 -1 -1 c 0 -0.5 0.5 -1 1 -1 c 0.5 0 1 0.5 1 1 C 10.9 14.2 10.5 14.7 10 14.7 z M 12.2 8.8 c -0.3 0.5 -0.5 0.8 -1 1.3 c -0.3 0.3 -0.5 0.7 -0.7 1.1 c -0.1 0.5 -0.5 0.7 -1 0.5 c -0.5 -0.1 -0.7 -0.5 -0.5 -1 c 0.1 -0.7 0.5 -1.3 0.8 -1.6 c 0.5 -0.5 0.7 -1 0.7 -1.6 c 0 -0.1 0 -0.5 -0.1 -0.5 c -0.1 -0.5 -0.7 -0.5 -1 -0.1 c -0.1 0.1 -0.1 0.3 -0.3 0.5 c -0.1 0.3 -0.5 0.5 -0.7 0.5 c -0.3 0 -0.5 0 -0.7 0 c -0.5 0 -0.5 -0.1 -0.5 -0.5 c 0.3 -1.3 1.1 -2.1 2.8 -2.1 c 0.5 0 1 0.1 1.4 0.7 C 12.5 6.6 12.7 7.9 12.2 8.8 z" />
+      </svg>
+    </td>
+    </tr>
+    <tr>
+      <th scope="row">Hugging</th>
+      <td>
+        <svg viewbox="0 0 25 25">
+        <path class="path-hugs-p" fill-rule="evenodd" clip-rule="evenodd" fill="#A0A0A0"  d="M 9.6 2.1 c -4 0 -7.6 3.4 -7.6 7.5 c 0 4.2 3.4 7.6 7.6 7.6 c 4.2 0 7.6 -3.4 7.6 -7.6 C 17.3 5.5 13.8 2.1 9.6 2.1 z M 10 14.7 c -0.5 0 -1 -0.5 -1 -1 c 0 -0.5 0.5 -1 1 -1 c 0.5 0 1 0.5 1 1 C 10.9 14.2 10.5 14.7 10 14.7 z M 12.2 8.8 c -0.3 0.5 -0.5 0.8 -1 1.3 c -0.3 0.3 -0.5 0.7 -0.7 1.1 c -0.1 0.5 -0.5 0.7 -1 0.5 c -0.5 -0.1 -0.7 -0.5 -0.5 -1 c 0.1 -0.7 0.5 -1.3 0.8 -1.6 c 0.5 -0.5 0.7 -1 0.7 -1.6 c 0 -0.1 0 -0.5 -0.1 -0.5 c -0.1 -0.5 -0.7 -0.5 -1 -0.1 c -0.1 0.1 -0.1 0.3 -0.3 0.5 c -0.1 0.3 -0.5 0.5 -0.7 0.5 c -0.3 0 -0.5 0 -0.7 0 c -0.5 0 -0.5 -0.1 -0.5 -0.5 c 0.3 -1.3 1.1 -2.1 2.8 -2.1 c 0.5 0 1 0.1 1.4 0.7 C 12.5 6.6 12.7 7.9 12.2 8.8 z" />
+      </svg>
+    </td>
+      <td>
+        <svg viewbox="0 0 25 25">
+          <path class="path-hugs-s" fill-rule="evenodd" clip-rule="evenodd" fill="#A0A0A0"  d="M 9.6 2.1 c -4 0 -7.6 3.4 -7.6 7.5 c 0 4.2 3.4 7.6 7.6 7.6 c 4.2 0 7.6 -3.4 7.6 -7.6 C 17.3 5.5 13.8 2.1 9.6 2.1 z M 10 14.7 c -0.5 0 -1 -0.5 -1 -1 c 0 -0.5 0.5 -1 1 -1 c 0.5 0 1 0.5 1 1 C 10.9 14.2 10.5 14.7 10 14.7 z M 12.2 8.8 c -0.3 0.5 -0.5 0.8 -1 1.3 c -0.3 0.3 -0.5 0.7 -0.7 1.1 c -0.1 0.5 -0.5 0.7 -1 0.5 c -0.5 -0.1 -0.7 -0.5 -0.5 -1 c 0.1 -0.7 0.5 -1.3 0.8 -1.6 c 0.5 -0.5 0.7 -1 0.7 -1.6 c 0 -0.1 0 -0.5 -0.1 -0.5 c -0.1 -0.5 -0.7 -0.5 -1 -0.1 c -0.1 0.1 -0.1 0.3 -0.3 0.5 c -0.1 0.3 -0.5 0.5 -0.7 0.5 c -0.3 0 -0.5 0 -0.7 0 c -0.5 0 -0.5 -0.1 -0.5 -0.5 c 0.3 -1.3 1.1 -2.1 2.8 -2.1 c 0.5 0 1 0.1 1.4 0.7 C 12.5 6.6 12.7 7.9 12.2 8.8 z" />
+        </svg>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>t</td>
+      <td>b</td>
+    </tr>
+  </tbody>
+</table>
+
 
 </html>
