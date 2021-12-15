@@ -4,6 +4,26 @@ body {
     background-color: #272727;
 }
 
+
+
+.download-container {
+    background-color: #272727
+    padding: 1em;
+    font-family: Sans-serif;
+    margin-bottom: 1em;
+}
+
+img {
+    visibility: hidden;
+}
+
+button {
+    font-size: 1.25em;
+    padding: 1em;
+}
+
+
+
 .table {
     width: 15%;
     margin-bottom: 1rem;
@@ -17,11 +37,12 @@ body {
 
 
 
-td{
+td {
     width: 64px;
 }
 
-.table td, .table th {
+.table td,
+.table th {
     padding: 0.15rem;
     text-align: center;
     vertical-align: middle;
@@ -29,9 +50,7 @@ td{
     font-weight: normal;
 }
 
-.table-section {
-    
-}
+.table-section {}
 
 h2 {
     font-size: 4rem;
@@ -39,13 +58,9 @@ h2 {
     color: #f8f9fa !important;
 }
 
-.path_cuddling-s {
+.path_cuddling-s {}
 
-}
-
-.path_cuddling_p{
-
-}
+.path_cuddling_p {}
 
 .smile-icons {
     display: flex;
@@ -162,8 +177,7 @@ table.section {
 
 svg {
     fill: rgb(242, 242, 242);
-    width:50%
-    
+    width: 42px
 }
 
 .rating-form-2 svg {
