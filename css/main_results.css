@@ -5,15 +5,17 @@ body {
     line-height: 20px;
     color: #333;
     background-color: rgb(44, 44, 44);
-    padding-left: 15px;
+    width: 1920px;
+    height: 1080px;
 }
+
 
 #capture{
   margin: 0 auto;
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: #272727;
+  background-color: #272727; !important
 }
 
 textarea{
