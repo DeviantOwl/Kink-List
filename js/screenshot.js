@@ -1,7 +1,7 @@
 function download(url){
   var a = $("<a style='display:none' id='js-downloder'>")
   .attr("href", url)
-  .attr("download", "test.png")
+  .attr("download", "kink1.png")
   .appendTo("body");
 
   a[0].click();
