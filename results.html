@@ -1,22 +1,25 @@
 <html>
+
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/results.js"></script>
+  <script src="js/screenshot.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/html2canvas.min.js"></script>
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
-
-
   <link rel="stylesheet" href="css/main_results.css">
-  <script src="http://html2canvas.hertzen.com/dist/html2canvas.js"></script>
-  <script src="js/results.js"></script>
-  <script src="js/screenshot.js"></script>
+
 
 
 </head>
 
-<div class="download-container">
+<a href="#" class="btn btn-block btn-primary mb-3" style="width:150" id="btnDownload">Save</a>
+
+<div id="capture">
 
   <body>
     <div class=menubar>
@@ -53,8 +56,6 @@
         </div>
       </nav>
     </div>
-
-
 
     <div class="table-section"></div>
     <h2 style="font-size:medium;margin-left: 2rem;">Vanilla Kinks</h2>
@@ -104,10 +105,32 @@
         </tr>
       </tbody>
     </table>
+</div>
+</div>
+</body>
 
-    <button class="download-btn">Download element!</button>
+<script>
+  function download(url) {
+    var a = $("<a style='display:none' id='js-downloder'>")
+      .attr("href", url)
+      .attr("download", "test.png")
+      .appendTo("body");
 
-    <img src="" id="created-element" />
-  </body>
+    a[0].click();
+
+    a.remove();
+  }
+
+  function saveCapture(element) {
+    html2canvas(element).then(function (canvas) {
+      download(canvas.toDataURL("image/png"));
+    })
+  }
+
+  $('#btnDownload').click(function () {
+    var element = document.querySelector("#capture");
+    saveCapture(element)
+  })
+</script>
 
 </html>
