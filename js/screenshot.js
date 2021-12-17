@@ -1,8 +1,8 @@
-$(document).ready(function () {
+window.onload = (function () {
 
     function saveScreenshot(canvas) {
         var downloadLink = document.createElement('a');
-        downloadLink.download = 'download.jpg';
+        downloadLink.download = 'kinklist.jpg';
         canvas.toBlob(function (blob) {
             downloadLink.href = URL.createObjectURL(blob)
             downloadLink.click();
