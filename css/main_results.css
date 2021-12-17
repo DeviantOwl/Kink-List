@@ -6,8 +6,6 @@ body {
     height: 1080;
 }
 
-
-
 .download-container {
     background-color: #272727;
     font-family: Sans-serif;
@@ -15,7 +13,6 @@ body {
     width: 1920;
     height: 1080;
 }
-
 
 img {
     visibility: hidden;
@@ -25,8 +22,6 @@ button {
     font-size: 1.25em;
     padding: 1em;
 }
-
-
 
 .table {
     width: 15%;
@@ -38,8 +33,6 @@ button {
     margin-right: 2rem;
     margin-bottom: 2rem;
 }
-
-
 
 td {
     width: 64px;
