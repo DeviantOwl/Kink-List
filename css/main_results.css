@@ -12,8 +12,8 @@ body {
 
 #capture{
   margin: 0 auto;
-  width: 100%;
-  height: 100%;
+  width: 1920px;
+  height: 1080px;
   overflow: hidden;
   background-color: #272727; !important
 }
