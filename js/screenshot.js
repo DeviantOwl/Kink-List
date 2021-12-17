@@ -1,3 +1,4 @@
+//
 window.onload = (function () {
 
     function saveScreenshot(canvas) {
@@ -8,7 +9,6 @@ window.onload = (function () {
             downloadLink.click();
         });
     }
-
 
     $(".download-btn").on("click", function (e) {
         e.preventDefault();
