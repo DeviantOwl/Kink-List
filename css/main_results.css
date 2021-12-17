@@ -2,15 +2,20 @@
 
 body {
     background-color: #272727;
+    width: 1920;
+    height: 1080;
 }
 
 
 
 .download-container {
-    background-color: #272727 padding: 1em;
+    background-color: #272727;
     font-family: Sans-serif;
     margin-bottom: 1em;
+    width: 1920;
+    height: 1080;
 }
+
 
 img {
     visibility: hidden;
@@ -56,10 +61,6 @@ h2 {
     margin-top: 1rem;
     color: #f8f9fa !important;
 }
-
-.path_cuddling-s {}
-
-.path_cuddling_p {}
 
 .smile-icons {
     display: flex;
