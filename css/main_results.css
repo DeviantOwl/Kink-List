@@ -1,19 +1,23 @@
+html,
 body {
-    margin: 0;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    color: #333;
-    background-color: rgb(205, 33, 33);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #11111e;
+}
+
+body {
+    overflow: auto;
 }
 
 
-#capture{
-  margin: 0 auto;
-  width: 1920px;
-  height: 1080px;
-  overflow: hidden;
-  background-color: #2600ff; !important
+#capture {
+    margin: 0 auto;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    background-color: #151515;
+     !important
 }
 
 .kinklist {
@@ -23,18 +27,18 @@ body {
 }
 
 
-h1{
+h1 {
     font-size: 36px;
 }
 
-h1{
+h1 {
     font-family: inherit;
     font-weight: 500;
     line-height: 1.1;
     color: inherit;
 }
 
-h1 small{
+h1 small {
     font-size: 65%;
 }
 
@@ -43,58 +47,7 @@ h1 small {
     line-height: 1;
     color: #777;
     display: block;
-   padding-top: 15px;
-}
-.specific{
-    background-color: rgb(64, 0, 255);
-}
-
-p a{
-padding: 5px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-body {
-    background-color: #272727;
-    width: 1920;
-    height: 1080;
+    padding-top: 15px;
 }
 
 .download-container {
@@ -133,8 +86,6 @@ td {
     border-top: 1px solid #dee2e600;
     font-weight: normal;
 }
-
-.table-section {}
 
 h2 {
     font-size: 4rem;
