@@ -1,108 +1,27 @@
-html,
-body {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    background-color: #11111e;
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body {
-    overflow: auto;
-}
-
-
-#capture {
-    margin: 0 auto;
-    width: 1920px;
-    height: 1080px;
-    overflow: hidden;
-    background-color: #151515;
-}
-
-.kinkcategory {
-    height: fit-content;
-}
-
-.kinklist_results {
-    width: 300px;
-    margin: 1em;
-    height: 100%;
-    display: flex;
-}
-
-.kinklist_groupings {
-    width: 300px;
-    margin-left: 1em;
-    height: 100%;
-    display: flex;
-}
-
-
-h1 {
-    font-size: 36px;
-}
-
-h1 {
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 1.1;
-    color: inherit;
-}
-
-h1 small {
-    font-size: 65%;
-}
-
-h1 small {
-    font-weight: 400;
-    line-height: 1;
-    color: #777;
-    display: block;
-    padding-top: 15px;
-}
-
-.download-container {
     background-color: #272727;
-    font-family: Sans-serif;
-    margin-bottom: 1em;
-    width: 1920;
-    height: 1080;
 }
 
-img {
-    visibility: hidden;
-}
-
-button {
-    font-size: 1.25em;
-    padding: 1em;
-}
-
-.table {
-    width: 100%%;
-    margin-bottom: 1rem;
-    color: #ffffff;
-    vertical-align: bottom;
-    height: 30%;
-}
 
 .table-dark {
-    color: #fff;
-    background-color: #121215;
-}
-
-
-td {
-    width: 64px;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0);
 }
 
 .table td,
 .table th {
-    padding: 0.15rem;
+    padding: 0.75rem;
     text-align: center;
-    vertical-align: middle;
-    border-top: 1px solid #0b0b0c !important;
-    font-weight: normal;
+    border-top: 1px solid #dee2e600;
+}
+
+.card-body {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	padding: .25rem;
 }
 
 h2 {
@@ -168,7 +87,7 @@ label {
 }
 
 table.section {
-    background-color: #0b0b0c;
+    background-color: #303031;
     border-collapse: collapse;
     border-width: 2px;
     border-color: #1f1919;
@@ -226,7 +145,6 @@ table.section {
 
 svg {
     fill: rgb(242, 242, 242);
-    width: 42px
 }
 
 .rating-form-2 svg {
