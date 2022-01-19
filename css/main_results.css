@@ -21,6 +21,7 @@ body {
 
 .kinkcategory {
     height: fit-content;
+    margin-left: 1em;
 }
 
 .kinklist_results {
@@ -31,7 +32,6 @@ body {
 }
 
 .kinklist_groupings {
-    width: 300px;
     margin-left: 1em;
     height: 100%;
     display: flex;
@@ -59,6 +59,10 @@ h1 small {
     color: #777;
     display: block;
     padding-top: 15px;
+}
+
+.big-container {
+    display: flex;
 }
 
 .download-container {
