@@ -4,7 +4,7 @@ body {
     font-size: 14px;
     line-height: 20px;
     color: #333;
-    background-color: rgb(44, 44, 44);
+    background-color: #11111e;
     width: 1920px;
     height: 1080px;
 }
@@ -37,7 +37,7 @@ body {
 .selections {
     width: 1920px;
     height: 1080px;
-    background-color: #272727;
+    background-color: #11111e
 }
 
 #capture {
@@ -45,7 +45,7 @@ body {
     width: 1920px;
     height: 1080px;
     overflow: hidden;
-    background-color: #272727;
+    background-color: #151515
      !important
 }
 
@@ -131,6 +131,12 @@ button {
     margin-bottom: 1rem;
     color: #ffffff;
     vertical-align: bottom;
+}
+
+.table-dark {
+    color: #fff;
+    background-color: #121215;
+    width: 100%;
 }
 
 td {
