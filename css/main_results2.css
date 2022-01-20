@@ -18,6 +18,12 @@ body {
   background-color: #272727; !important
 }
 
+.kinklist {
+    width: 300px;
+    margin: 1em;
+    height: 100%;
+}
+
 textarea{
   width: 100%;
   padding: 2rem .5rem;
@@ -127,14 +133,10 @@ button {
 }
 
 .table {
-    width: 15%;
+    width: 100%%;
     margin-bottom: 1rem;
     color: #ffffff;
     vertical-align: bottom;
-    margin-top: 0rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
 }
 
 td {
