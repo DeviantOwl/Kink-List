@@ -63,6 +63,7 @@ h1 small {
 
 .big-container {
     display: flex;
+    width: 1920px;
 }
 
 .download-container {
@@ -70,7 +71,7 @@ h1 small {
     font-family: Sans-serif;
     margin-bottom: 1em;
     width: 1920;
-    height: 1080;
+    height: 1080px;
 }
 
 img {
