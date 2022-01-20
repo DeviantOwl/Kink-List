@@ -9,12 +9,36 @@ body {
     height: 1080px;
 }
 
+
+.big-container {
+    display: flex;
+    width: 1920px;
+}
+
+.kinkcategory {
+    height: fit-content;
+    margin-left: 1em;
+}
+
+.kinklist_results {
+    width: 300px;
+    margin: 1em;
+    height: 100%;
+    display: flex;
+}
+
+.kinklist_groupings {
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+}
+
+
 .selections {
     width: 1920px;
     height: 1080px;
     background-color: #272727;
 }
-
 
 #capture {
     margin: 0 auto;
@@ -23,22 +47,6 @@ body {
     overflow: hidden;
     background-color: #272727;
      !important
-}
-
-textarea {
-    width: 100%;
-    padding: 2rem .5rem;
-    background: transparent;
-    border: 0;
-    text-align: center;
-    color: #fff;
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    resize: none;
-    overflow: hidden;
-    max-height: 100%;
-    min-height: 100%;
 }
 
 
@@ -65,6 +73,12 @@ h1 small {
     padding-top: 15px;
 }
 
+h2 {
+    font-size: 4rem;
+    margin-top: 1rem;
+    color: #f8f9fa !important;
+}
+
 .specific {
     background-color: #fff;
 }
@@ -73,62 +87,21 @@ p a {
     padding: 5px;
 }
 
-
-.big-container {
-    display: flex;
-    width: 1920px;
+textarea {
+    width: 100%;
+    padding: 2rem .5rem;
+    background: transparent;
+    border: 0;
+    text-align: center;
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    resize: none;
+    overflow: hidden;
+    max-height: 100%;
+    min-height: 100%;
 }
-
-
-
-.kinkcategory {
-    height: fit-content;
-    margin-left: 1em;
-}
-
-.kinklist_results {
-    width: 300px;
-    margin: 1em;
-    height: 100%;
-    display: flex;
-}
-
-.kinklist_groupings {
-    margin-left: 1em;
-    height: 100%;
-    display: flex;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 body {
     background-color: #272727;
@@ -158,10 +131,6 @@ button {
     margin-bottom: 1rem;
     color: #ffffff;
     vertical-align: bottom;
-    margin-top: 0rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
 }
 
 td {
@@ -177,13 +146,6 @@ td {
     font-weight: normal;
 }
 
-.table-section {}
-
-h2 {
-    font-size: 4rem;
-    margin-top: 1rem;
-    color: #f8f9fa !important;
-}
 
 .smile-icons {
     display: flex;
