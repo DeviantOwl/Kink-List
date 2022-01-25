@@ -1,34 +1,171 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
 body {
-    background-color: #272727;
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    background-image: url('../img/bll.png');
+    width: 1920px;
+    height: 1080px;
+}
+
+.text-bold{
+    color: white;
+    padding-left: 2em;
+    font-weight: 600;
+}
+
+.text-bold-no-pad{
+    color: white;
+    font-weight: 500;
+    font-size: medium;
+
+}
+
+.big-container {
+    display: flex;
+    width: 1920px;
+}
+
+.kinkcategory {
+    height: fit-content;
+    margin-left: 1em;
+}
+
+.kinklist_results {
+    width: 300px;
+    margin: 1em;
+    height: 100%;
+    display: flex;
+}
+
+.kinklist_groupings {
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
 }
 
 
-.table-dark {
-	color: #fff;
-	background-color: rgba(0, 0, 0, 0);
+.selections {
+    width: 1920px;
+    height: 1080px;
+    background-color: #11111e27
 }
 
-.table td,
-.table th {
-    padding: 0.75rem;
-    text-align: center;
-    border-top: 1px solid #dee2e600;
+#capture {
+    margin: 0 auto;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    background-image: url('../img/bll.png');
+
 }
 
-.card-body {
-	-webkit-box-flex: 1;
-	-ms-flex: 1 1 auto;
-	flex: 1 1 auto;
-	padding: .25rem;
+h1 {
+    font-size: 36px;
+}
+
+h1 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+h1 small {
+    font-size: 65%;
+}
+
+h1 small {
+    font-weight: 400;
+    line-height: 1;
+    color: #777;
+    display: block;
+    padding-top: 15px;
 }
 
 h2 {
     font-size: 4rem;
-    margin-top: 1rem;
+    margin-top: .65rem;
+    line-height: .75;
     color: #f8f9fa !important;
 }
+
+.specific {
+    background-color: #fff;
+}
+
+p a {
+    padding: 5px;
+}
+
+textarea {
+    width: 100%;
+    padding: 2rem .5rem;
+    background: transparent;
+    border: 0;
+    text-align: center;
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    resize: none;
+    overflow: hidden;
+    max-height: 100%;
+    min-height: 100%;
+}
+
+.download-container {
+    font-family: Sans-serif;
+    margin-bottom: 1em;
+    width: 1920;
+    height: 1080;
+}
+
+img {
+    visibility: hidden;
+}
+
+button {
+    font-size: 1.25em;
+    padding: 1em;
+}
+
+.table {
+    width: 15%;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    vertical-align: bottom;
+}
+
+.table-dark {
+    color: #fff;
+    background-color: #10101356;
+    width: 100%;
+}
+
+.table-dark td,
+.table-dark th,
+.table-dark thead th {
+    border-color: #95999c00;
+    border-bottom-color: #7286ff;
+
+}
+
+
+td {
+    width: 64px;
+}
+
+.table td,
+.table th {
+    padding: 0.4em;
+    text-align: center;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e600;
+    font-weight: normal;
+}
+
 
 .smile-icons {
     display: flex;
@@ -145,6 +282,7 @@ table.section {
 
 svg {
     fill: rgb(242, 242, 242);
+    width: 42px
 }
 
 .rating-form-2 svg {

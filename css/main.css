@@ -1,27 +1,57 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+
 body {
     background-color: #272727;
+    background-image: url("../img/bll.png");
+    color: white;
+    font-size: 16px;
 }
 
-.table {
-    width: 100%;
-    margin-bottom: 1rem;
-    color: #ffffff;
-    vertical-align: bottom;
+.topbox {
+    text-align: center;
+    font: #f8f9fa;
+    width: 50%;
+    margin-left: 25%;
+    padding: 1em;
+}
+
+.table-dark {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .table td,
 .table th {
     padding: 0.75rem;
     text-align: center;
-    border-top: 1px solid #dee2e600;
+    border-top: 1px solid #141418;
 }
 
-h2 {
-    font-size: 4rem;
+.card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: .25rem;
+}
+
+h1 {
+    font-size: 5rem;
     margin-top: 1rem;
-    color: #f8f9fa !important;
+}
+
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+.category-title {
+    font-size: 1.5rem;
+    margin-bottom: 0em;
 }
 
 .smile-icons {
@@ -42,6 +72,11 @@ label {
     text-decoration: none;
     font-weight: bold;
     font-size: 2rem;
+}
+
+
+.table tbody+tbody {
+    border-top: 2px solid #ffffff14;
 }
 
 .navbar-light .navbar-nav .active>.nav-link,
@@ -73,10 +108,22 @@ label {
     width: 100%;
 }
 
+.btn-primary {
+    color: #fff;
+    background-color: #7286ff;
+    border-color: #7286ff;
+}
+
+.table-dark td,
+.table-dark th,
+.table-dark thead th {
+    border-color: #00000000;
+}
+
 .card-header {
     padding: .75rem 1.25rem;
     margin-bottom: 0;
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(0 0 0 / 35%);
     border-bottom: 1px solid rgba(0, 0, 0, .125);
 }
 
@@ -84,7 +131,7 @@ table.section {
     background-color: #303031;
     border-collapse: collapse;
     border-width: 2px;
-    border-color: #1f1919;
+    border-color: #141418;
     border-style: solid;
     color: #ffffff;
     font-size: 1rem;
@@ -104,9 +151,10 @@ table.section {
     margin: auto;
     -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 16, 0.19), 0 0.3rem 0.3rem rgba(0, 0, 16, 0.23);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 16, 0.19), 0 0.3rem 0.3rem rgba(0, 0, 16, 0.23);
-    background-color: rgb(36, 37, 39);
+    background-color: #141418;
     padding: 0.8rem;
     width: 55rem;
+    margin-bottom: 1em;
 }
 
 .table-hover tbody tr:hover {

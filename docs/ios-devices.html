@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="js/results.js"></script>
+    <script src="js/screenshot.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/html2canvas.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="../css/info.css">
+
+
+
+</head>
+
+<body>
+    <div class=menubar>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="display: flex;flex-direction: row;">
+            <a class="navbar-brand" href="#">DB</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://kinktest.deviantbound.com">Home<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://deviantbound.com">Join Our Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BDSM Test</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Resources
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="page-title">Saving The Results On iOS Devices</div>
+    <div class="jumbotron" style="margin-left: 10%; margin-right:10%; margin-top:6em; background-color: #141418;">
+        <h2> Directions To A Screenshot On iOS</h2>
+        <p> 1) Take a screenshot while !!!!!! landscape aka turn your phone on it's side !!!!!! using power+lower volume
+            of the
+            previous page (you may need to disable rotate lock).</h2>
+            <p> 2) Click the new screenshot preview in the bottom left to
+                edit.</p>
+            <p> 3) Edit screenshot and select "Full Page Width" instead of
+                "Screen" at the top of the edit window.</p>
+            <p> 4) You can crop out the download buttons using tool right of
+                "DONE" Sometimes cropping is buggy and cuts off the side, if this occurs you may need to crop it in "iOS
+                Photo's App" or app of your choice.</p>
+            <p>5) The file will download as a the PDF. IMPORTANT: The PDF will not appear in your photos, rather it
+                appears within "Files" app.
+            </p>
+            <p>6) Optional: You can convert PDF to an image using a site (or an app?) like https://pdftoimage.com/ (Use
+                At Your Own Risk)</p>
+            <h2>Why is it complicated for iOS?</h2>
+            <p>Webkit/iOS, the web engine behind all browsers on iOS is far behind in features compared to better
+                browsers.
+                This creates multiple challenges where certain functions do not work as
+                intented because feature does not exist, or do but are poorly documented/dicussed. I spent several days
+                trying solutions, but libary used to download image called html2canvas.js would fail to save the image,
+                issue seemed related to the iOS file storage being atypical storage solution. Thus I found work around
+                above. I will conitune trying to fix this, but you are framiliar with iOS web dev send me email at
+                contact@deviantbound.com</p>
+            <h2>It is still not working!</h2>
+            <p>Below is list of what devices are supported, this may change if browsers adopt different standards and
+                changes. I devolop this site using Chrome on Windows 11, expect Chrome to work the best.</p>
+            <p>Note: Chrome/Firefox on iOS are just Safari (webkit clones) with different colors/branding, thus won't
+                work because of the rules imposed by Apple for web browsers to Safari's webkit.</p>
+            <p>Chrome v97.0.4692.99 (Supported)</p>
+            <p>Firefox v96.0.2 (Supported)</p>
+            <p>macOS - Chrome/Firefox (Supported) </p>
+            <p>Chrome - Android 12 (Likely Supported) </p>
+            <p>macOS - Safari (Likely Supported) </p>
+            <p>iOS - Chrome/Firefox/Other (NOT SUPPORTED) - See Work Around Above </p>
+            <p>iOS - Safari (NOT SUPPORTED) - See Work Around Above </p>
+            <h2>I am still having issues ;-;</h2>
+            <p>Send a detailed email with your problem to contact@deviantbound.com, be sure to include your device and
+                browser type. Otherwise join our Discord @ join.deviantbound.com and Direct Message our staff.</p>
+
+    </div>
+    <div class="bottom-box">
+        <a href="index.html" class="btn btn-block btn-primary mb-3" style="margin-right: 33%" id="">Return To Selection
+            Area</a>
+        <p>Copyright © 2022 - Deviant Bound</p>
+    </div>
+    </div>
+    </div>
+</body>
+
+
+</html>

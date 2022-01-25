@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20xp;
+    color: #333;
+    color: white;
+    background-image: url('../img/bll.png');
+}
+
+.jumbotron {
+    padding: 2rem 2rem;
+}
+
+.page-title {
+    font-weight: 700;
+    text-align: center;
+    margin-top: 1.5em;
+    font-size: 3rem;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+.bottom-box {
+    text-align: center;
+}
+
+.btn-link {
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.btn-block {
+    display: block;
+    width: 33%;
+    margin-left: 33%;
+    margin-right: 33%;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(255 255 255 / 90%);
+    font-weight: 600;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255 255 255 / 90%);
+    font-weight: 600;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-light .navbar-brand {
+    color: rgb(255 255 255 / 90%);
+    font-weight: bold;
+}
+
+
+.bg-light {
+    background-color: #7286ff !important;
+    width: 100%;
+}
