@@ -9,6 +9,8 @@ body {
     height: 1080px;
 }
 
+
+
 .text-bold{
     color: white;
     padding-left: 2em;
@@ -136,11 +138,14 @@ button {
     margin-bottom: 1rem;
     color: #ffffff;
     vertical-align: bottom;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
 }
 
 .table-dark {
     color: #fff;
-    background-color: #10101356;
+    background-color: #1717188a;
     width: 100%;
 }
 
@@ -339,3 +344,4 @@ input[class="limit"]:checked+svg,
 input[class="limit"]:focus+svg {
     fill: rgb(239, 42, 16);
 }
+
