@@ -4,20 +4,20 @@ body {
     font-size: 14px;
     line-height: 20px;
     color: #333;
-    background-image: url('../img/bll.png');
+    background-image: url("../img/bg.png");
     width: 1920px;
     height: 1080px;
 }
 
 
 
-.text-bold{
+.text-bold {
     color: white;
     padding-left: 2em;
     font-weight: 600;
 }
 
-.text-bold-no-pad{
+.text-bold-no-pad {
     color: white;
     font-weight: 500;
     font-size: medium;
@@ -344,4 +344,3 @@ input[class="limit"]:checked+svg,
 input[class="limit"]:focus+svg {
     fill: rgb(239, 42, 16);
 }
-
