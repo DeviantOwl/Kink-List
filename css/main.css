@@ -184,6 +184,13 @@ table.section {
     border-radius: 2.2rem;
 }
 
+.center-button {
+    padding-right: 25%;
+    padding-left: 25%;
+    padding-bottom: 2em;
+    margin-top: 3em;
+}
+
 svg {
     fill: rgb(242, 242, 242);
 }
